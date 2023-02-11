@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.biodata{
+ color: #282c34;
+  border: 1px red dotted;
+}
+
+.myname{
+  color: blue;
+}
