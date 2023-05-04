@@ -1,0 +1,57 @@
+.name-input, .name-input:focus-visible{
+    border: 2px dotted yellowgreen;
+    outline: none;
+}
+
+
+.email-input, .email-input:focus-visible{
+    border: 2px solid rgb(243, 150, 10);
+    outline: none;
+}
+
+.input-box{
+    margin-top: 20px;
+}
+
+.person-select{
+    font-size: 18px;
+}
+
+.form-save-box{
+    margin-top: 10px;
+}
+
+.form-save-button{
+    font-size: 25px;
+}
+
+.father-name-input, .father-name-input:focus-visible{
+    border: 2px solid rgb(255, 3, 158);
+    outline: none;
+}
+.fatherr-input-box{
+    margin-top: 20px;
+}
+
+.mother-input, .mother-input:focus-visible{
+    border: 2px solid rgb(13, 248, 13);
+    outline: none;
+ 
+}
+.mother-input-box{
+    margin-top: 20px;
+}
+.mobile-no-input, .mobile-no-input:focus-visible{
+    border: 2px solid rgb(45, 10, 243);
+    outline: none;
+}
+.mobile-input-box{
+    margin-top: 20px;
+}
+.age-input, .age-input:focus-visible{
+    border: 2px solid rgb(10, 227, 243);
+    outline: none;
+}
+.age-input-box{
+    margin-top: 20px;
+}

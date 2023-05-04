@@ -1,0 +1,25 @@
+.title {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  top: 21px;
+  font-size: 43px;
+}
+.top {
+  width: 20px;
+  border-top: 2px solid gray;
+  margin-top: 28px;
+}
+
+.bgtitle {
+  font-size: 34px;
+  color: #a09baf;
+  text-align: center;
+}
+.himanshu {
+  color: #585b5d;
+}
+.pot {
+  position: relative;
+}

@@ -1,0 +1,28 @@
+img {
+  width: 100%;
+  overflow: hidden;
+  gap: 10px;
+  height: calc(100% - 40px);
+  box-shadow: 2px 2px 9px 1px rgba(1, 1, 1, 0.2);
+}
+.title {
+  margin: 10px;
+}
+.hello {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e1d3d3;
+}
+h2 {
+  letter-spacing: 7px;
+  margin: 50px;
+}
+.heading {
+  max-width: 182px;
+  max-height: 225px;
+  margin: 10px;
+}
+.center {
+  text-align: center;
+}

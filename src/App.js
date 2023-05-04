@@ -1,14 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import BioData from './BioData';
+import React from "react";
+import "./App.css";
+import Imagecarous from "./imageslider/imagecarous";
 
 function App() {
-  return (
-    <div className="App">
-      <BioData name='himanshu' gender='male' />
-      <BioData name='nutan' gender='female' />
-    </div>
-  );
+  return <Imagecarous></Imagecarous>;
 }
-
 export default App;
