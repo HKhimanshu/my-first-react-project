@@ -1,13 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Mycard from "./Mycard.js";
 import "./imagecarous.css";
 const Imagecarous = () => {
-  const btnpressprev = () => {
-    let box = document.querySelector(".product-container");
-    let width = box.clientWidth;
-    box.scrollLeft = box.scrollLeft - width;
-    console.log(width);
-  };
+  let [activeCard, setActiveCard] = useState(0);
+  let [timer, setTimer] = useState(0);
 
   const arr = [
     {
@@ -21,8 +17,7 @@ const Imagecarous = () => {
       title: "heading2",
     },
     {
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN9oGdrlLfqywsY-gk5-KPVMvBmIGBbKjSHg&usqp=CAU",
+      image: "https://wallpapercave.com/wp/u9AVLry.jpg",
       title: "heading3",
     },
     {
@@ -46,7 +41,7 @@ const Imagecarous = () => {
     },
     {
       image:
-        "https://www.shutterstock.com/image-photo/man-hands-holding-global-network-260nw-1801568002.jpg",
+        "https://bsmedia.business-standard.com/_media/bs/img/article/2020-07/28/full/1595904030-4016.jpg",
       title: "heading8",
     },
     {
@@ -60,31 +55,63 @@ const Imagecarous = () => {
     },
     {
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl-gn89WhVtpNvOXnNjk5D0At_OIEWM8DiLw&usqp=CAU",
+        "https://assets.hongkiat.com/uploads/nature-photography/The-best-nature-photography-collection.jpg",
       title: "heading11",
     },
-    { image: "", title: "heading12" },
-    { image: "", title: "heading13" },
-    { image: "", title: "heading14" },
+    {
+      image:
+        "https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg",
+      title: "heading12",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg",
+      title: "heading13",
+    },
+    {
+      image:
+        "https://www.clubmahindra.com/blog/media/section_images/naturephot-ec32e94608f809e.webp",
+      title: "heading14",
+    },
   ];
-  const btnpressnext = () => {
+  useEffect(() => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    setTimer(
+      setTimeout(() => {
+        if (activeCard == arr.length - 1) {
+          btnpressdot(0);
+        } else {
+          btnpressdot(activeCard + 1);
+        }
+      }, 5000)
+    );
+    return () => setTimer(null);
+  }, [activeCard]);
+
+  const btnpressdot = (dotNo) => {
     let box = document.querySelector(".product-container");
     let width = box.clientWidth;
-    box.scrollLeft = box.scrollLeft + width;
-    console.log(width);
+    box.scrollLeft = width * dotNo;
+    setActiveCard(dotNo);
   };
-  return (
-    <div className="product-carousel">
-      <button className="pre-btn" onClick={btnpressprev}>
-        <p>&lt;</p>
-      </button>
 
-      <button className="next-btn" onClick={btnpressnext}>
-        <p>&gt;</p>
-      </button>
-      <div className="product-container">
-        {arr.map((i) => (
-          <Mycard image={i.image} title={i.title} />
+  return (
+    <div>
+      <div className="product-carousel">
+        <div className="product-container">
+          {arr.map((i) => (
+            <Mycard image={i.image} title={i.title} />
+          ))}
+        </div>
+      </div>
+      <div className="dots">
+        {arr.map((i, index) => (
+          <div
+            className={`dot ${index == activeCard ? "active" : ""}`}
+            onClick={() => btnpressdot(index)}
+          ></div>
         ))}
       </div>
     </div>

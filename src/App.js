@@ -1,8 +1,13 @@
 import React from "react";
 import "./App.css";
 import Imagecarous from "./imageslider/imagecarous";
+import Router from "./imageslider/router";
 
 function App() {
-  return <Imagecarous></Imagecarous>;
+  return (
+    <>
+      <Router></Router>
+    </>
+  );
 }
 export default App;
