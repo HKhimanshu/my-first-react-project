@@ -2,11 +2,12 @@ import React from "react";
 import "./App.css";
 import Imagecarous from "./imageslider/imagecarous";
 import Router from "./imageslider/router";
+import Counter from "./counter";
 
 function App() {
   return (
     <>
-      <Router></Router>
+      <Counter></Counter>
     </>
   );
 }
