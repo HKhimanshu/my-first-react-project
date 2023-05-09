@@ -43,6 +43,7 @@
   margin: 7px;
   cursor: pointer;
 }
+
 .dots .dot:hover,
 .dots .dot.active {
   background-color: #c50000;
@@ -51,4 +52,9 @@
   display: flex;
   background-color: rgb(252, 252, 252);
   justify-content: center;
+}
+.dots .dot.small {
+  height: 5px;
+  width: 5px;
+  margin: 2px;
 }
