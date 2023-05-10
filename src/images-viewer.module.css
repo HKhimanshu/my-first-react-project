@@ -1,0 +1,33 @@
+.seconddiv {
+  display: flex;
+  justify-content: space-between;
+}
+.smallimage {
+  width: 47px;
+  height: 60px;
+  padding: 15px;
+}
+.cutbtn {
+  width: 100px;
+  height: 100px;
+}
+.thirddiv {
+  display: flex;
+  justify-content: space-between;
+}
+.maindiv {
+  background-image: url(https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17026506/2022/8/11/9c3f2537-89ba-417e-9d28-1d9be3abaa201660212949815-WROGN-Men-Tshirts-8871660212949259-3.jpg);
+  height: 100vh;
+  min-width: 500px;
+  cursor: -webkit-image-set(url(images/position-cursor.png) 2x), row-resize;
+  max-width: 1000px;
+  width: 50%;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+.prebtn,
+.nextbtn {
+  font-size: 50px;
+  padding: 0 10px;
+  border-radius: 11px;
+}
