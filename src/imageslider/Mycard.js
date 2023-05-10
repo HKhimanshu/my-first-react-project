@@ -1,5 +1,5 @@
 import React from "react";
-import "./Mycard.css";
+import styles from "./Mycard.module.css";
 function Mycard({ image, title, width, type, redirectTo }) {
   console.log(width);
   let height = 385;
@@ -11,8 +11,8 @@ function Mycard({ image, title, width, type, redirectTo }) {
 
   return (
     <a href={redirectTo}>
-      <div className="mycard" style={{ minWidth: width + "px" }}>
-        <div className="heading">
+      <div className={styles["mycard"]} style={{ minWidth: width + "px" }}>
+        <div className={styles["heading"]}>
           <img
             src={image}
             style={{ height: type === "card" ? "280px" : height + "px" }}

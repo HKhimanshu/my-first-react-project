@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Mycard from "./Mycard.js";
-import "./imagecarous.css";
+import styles from "./imagecarous.module.css";
 const Imagecarous = ({ type, data }) => {
   let [activeCard, setActiveCard] = useState(0);
   let [timer, setTimer] = useState(0);
@@ -43,8 +43,8 @@ const Imagecarous = ({ type, data }) => {
 
   return (
     <div>
-      <div className={`product-carouse ${type !== "card" ? "full-page" : ""} `}>
-        <div className="product-container" ref={productContainer}>
+      <div className={styles["product-carouse"]}>
+        <div className={styles["product-container"]} ref={productContainer}>
           {data.map((i) => (
             <Mycard
               image={i.image}
@@ -56,12 +56,12 @@ const Imagecarous = ({ type, data }) => {
           ))}
         </div>
       </div>
-      <div className="dots">
+      <div className={styles["dots"]}>
         {data.map((i, index) => (
           <div
-            className={`dot ${index == activeCard ? "active" : ""} ${
-              type === "card" ? "small" : ""
-            }`}
+            className={`${styles["dot"]} ${
+              index == activeCard ? styles["active"] : ""
+            } ${type === "card" ? styles["small"] : ""}`}
             onClick={() => btnpressdot(index)}
           ></div>
         ))}
