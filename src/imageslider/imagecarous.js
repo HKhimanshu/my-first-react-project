@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Mycard from "./Mycard.js";
+import "./image-slider-example.js";
 import styles from "./imagecarous.module.css";
 const Imagecarous = ({ type, data }) => {
   let [activeCard, setActiveCard] = useState(0);

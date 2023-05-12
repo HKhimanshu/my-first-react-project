@@ -1,3 +1,4 @@
+import Imagecarous from "./imagecarous.js";
 function Imagesliderexample() {
   const data = [
     {

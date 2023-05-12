@@ -1,0 +1,45 @@
+.images {
+  width: 418px;
+  height: 560px;
+  overflow: hidden;
+  margin: 4px;
+}
+.ims {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 855px;
+  padding: 10px;
+}
+.images img {
+  transition: transform 0.4s;
+  width: 100%;
+  margin: 0 auto;
+}
+.images img:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.prent {
+  display: flex;
+}
+.leftdiv {
+  margin: 12px 15px;
+}
+.line {
+  margin: 15px 12px;
+}
+.ward {
+  font-size: 20px;
+  padding-top: 6px;
+  color: gray;
+}
+.inc {
+  color: green;
+
+  padding-bottom: 25px;
+}
+.sel {
+  font-weight: 700;
+}
