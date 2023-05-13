@@ -38,7 +38,45 @@ function Productdescription() {
 
         <h2>₹319</h2>
         <h4 className={styles["inc"]}>inclusive of all taxes</h4>
-        <p className={styles["sel"]}>SELECT SIZE</p>
+        <div className={styles["sold"]}>
+          <p className={styles["sel"]}>SELECT SIZE</p>
+          <p className={styles["new"]}>SIZE CHART </p>
+        </div>
+
+        <div className={styles.tooltip}>
+          <div className={styles.himanshu}>
+            <button className={styles.btno}>
+              <p className={styles["cold"]}>S</p>
+            </button>
+            <span className={styles["tooltiptext"]}>
+              Garment Measurement:
+              <span className={styles.tips}>Chest - 37.5in</span>
+              <p>Slim Fit </p>The model (height 6') is wearing a size M
+            </span>
+          </div>
+
+          <div className={styles.himanshu}>
+            <button className={styles.btno}>
+              <p className={styles["cold"]}>m</p>
+            </button>
+            <span className={styles["tooltiptext"]}>
+              Garment Measurement:
+              <span className={styles.tips}>Chest - 39.5in</span>
+              <p>Slim Fit </p>The model (height 6') is wearing a size M
+            </span>
+          </div>
+          <div className={styles.himanshu + " " + styles.disableds}>
+            <button className={styles.btno}>
+              <p className={styles["cold"]}>L</p>
+              <span></span>
+            </button>
+            <span className={styles["tooltiptext"]}>
+              Garment Measurement:
+              <span className={styles.tips}>Chest - 39.5in</span>
+              <p>Slim Fit </p>The model (height 6') is wearing a size M
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );

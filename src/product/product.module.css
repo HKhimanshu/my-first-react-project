@@ -44,3 +44,82 @@
 .wid {
   width: 50%;
 }
+.sold {
+  display: flex;
+  padding-bottom: 20px;
+}
+.new {
+  color: #ff3e6c;
+  font-weight: 700;
+  margin-left: 22px;
+}
+.cold {
+  margin: 0;
+  font-size: 20px;
+}
+.tooltip {
+  display: flex;
+  position: relative;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  box-shadow: 1px 1px 3px 3px rgba(1, 1, 1, 0.2);
+  background-color: rgb(255, 255, 255);
+  color: #494747;
+  /* text-align: center; */
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 0;
+  margin-left: -18px;
+  opacity: 0;
+  transition: opacity 1s;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tips {
+  font-weight: 700;
+  padding-left: 8px;
+}
+.tooltip .btno {
+  height: 50px;
+  position: relative;
+  width: 50px;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+}
+.tooltip .himanshu:not(.disableds) .btno:hover + .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip .himanshu:not(.disableds) .btno:hover {
+  border-color: #ff3e6c;
+}
+
+.himanshu {
+  margin-left: 10px;
+}
+.disableds button span {
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: rgb(186, 182, 182);
+
+  width: 100%;
+  transform: rotate(-46deg);
+}
+.tooltip .disableds .btno {
+  cursor: default;
+}
+.disableds button p {
+  color: gray;
+}
