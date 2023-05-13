@@ -21,7 +21,7 @@ function Productdescription() {
     <div className={styles["prent"]}>
       <div className={styles["ims"]}>
         {images.map((o) => (
-          <div>
+          <div className={styles["wid"]}>
             <div className={styles["images"]}>
               <img src={o.url}></img>
             </div>
@@ -36,7 +36,7 @@ function Productdescription() {
         </p>
         <hr className={styles["line"]}></hr>
 
-        <h1>₹319</h1>
+        <h2>₹319</h2>
         <h4 className={styles["inc"]}>inclusive of all taxes</h4>
         <p className={styles["sel"]}>SELECT SIZE</p>
       </div>
