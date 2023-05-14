@@ -1,0 +1,35 @@
+.primary {
+  margin-top: 34px;
+  border-color: #ff3e6c;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.primary .title {
+  padding: 15px 102px;
+  font-weight: 900;
+  color: white;
+  background-color: #ff3e6c;
+}
+.primary .title:hover {
+  background-color: #fd6d8e;
+  cursor: pointer;
+}
+
+.secondary .title {
+  padding: 14px 45px;
+  font-weight: 900;
+}
+.secondary {
+  margin-left: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(189, 189, 189);
+  background-color: white;
+}
+.secondary:hover {
+  border-color: #000000;
+  cursor: pointer;
+}

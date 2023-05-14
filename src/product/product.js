@@ -1,3 +1,5 @@
+import Button from "../molecules/button/button";
+import ProductVariantSize from "../molecules/product/product-variant-size";
 import styles from "./product.module.css";
 function Productdescription() {
   const images = [
@@ -43,40 +45,71 @@ function Productdescription() {
           <p className={styles["new"]}>SIZE CHART </p>
         </div>
 
-        <div className={styles.tooltip}>
-          <div className={styles.himanshu}>
-            <button className={styles.btno}>
-              <p className={styles["cold"]}>S</p>
-            </button>
-            <span className={styles["tooltiptext"]}>
-              Garment Measurement:
-              <span className={styles.tips}>Chest - 37.5in</span>
-              <p>Slim Fit </p>The model (height 6') is wearing a size M
-            </span>
-          </div>
+        <div className={styles.productVariantSize}>
+          <ProductVariantSize
+            title="s"
+            tooltiptext={
+              <>
+                Garment Measurement:
+                <span className={styles.tips}>Chest - 37.5in</span>
+                <p>Slim Fit </p>The model (height 6') is wearing a size M
+              </>
+            }
+          />
 
-          <div className={styles.himanshu}>
-            <button className={styles.btno}>
-              <p className={styles["cold"]}>m</p>
-            </button>
-            <span className={styles["tooltiptext"]}>
-              Garment Measurement:
-              <span className={styles.tips}>Chest - 39.5in</span>
-              <p>Slim Fit </p>The model (height 6') is wearing a size M
-            </span>
-          </div>
-          <div className={styles.himanshu + " " + styles.disableds}>
-            <button className={styles.btno}>
-              <p className={styles["cold"]}>L</p>
-              <span></span>
-            </button>
-            <span className={styles["tooltiptext"]}>
-              Garment Measurement:
-              <span className={styles.tips}>Chest - 39.5in</span>
-              <p>Slim Fit </p>The model (height 6') is wearing a size M
-            </span>
-          </div>
+          <ProductVariantSize
+            title="m"
+            tooltiptext={
+              <>
+                Garment Measurement:
+                <span className={styles.tips}>Chest - 39.5in</span>
+                <p>Slim Fit </p>The model (height 6') is wearing a size M
+              </>
+            }
+          />
+
+          <ProductVariantSize
+            title="L"
+            disabled={true}
+            tooltiptext={
+              <>
+                Garment Measurement:
+                <span className={styles.tips}>Chest - 41.5in</span>
+                <p>Slim Fit </p>The model (height 6') is wearing a size M
+              </>
+            }
+          />
+
+          <ProductVariantSize
+            title="XL"
+            tooltiptext={
+              <>
+                Garment Measurement:
+                <span className={styles.tips}>Chest - 43.5in</span>
+                <p>Slim Fit </p>The model (height 6') is wearing a size M
+              </>
+            }
+          />
+
+          <ProductVariantSize
+            title="XXL"
+            disabled={true}
+            tooltiptext={
+              <>
+                Garment Measurement:
+                <span className={styles.tips}>Chest - 45.5in</span>
+                <p>Slim Fit </p>The model (height 6') is wearing a size M
+              </>
+            }
+          />
         </div>
+
+        <div>
+          <Button type={"primary"}>ADD TO BAG</Button>
+          <Button type={"secondary"}>WISHLIST</Button>
+        </div>
+
+        <hr className={styles["line"]}></hr>
       </div>
     </div>
   );
