@@ -1,0 +1,19 @@
+.bord {
+  border: 1px solid rgb(197, 193, 193);
+  padding: 10px;
+  border-radius: 5px;
+  width: 260px;
+  margin-top: 20px;
+}
+.pincode {
+  border: none;
+  outline: none;
+}
+.check {
+  border: none;
+  margin-left: 20px;
+  color: #ff3e6c;
+}
+.check:hover {
+  cursor: pointer;
+}

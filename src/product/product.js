@@ -1,6 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBagShopping, faTruck } from "@fortawesome/free-solid-svg-icons";
 import Button from "../molecules/button/button";
 import ProductVariantSize from "../molecules/product/product-variant-size";
 import styles from "./product.module.css";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import NumberInputBox from "../molecules/input-box/number-input-box";
+
 function Productdescription() {
   const images = [
     {
@@ -51,7 +56,7 @@ function Productdescription() {
             tooltiptext={
               <>
                 Garment Measurement:
-                <span className={styles.tips}>Chest - 37.5in</span>
+                <b>Chest - 37.5in</b>
                 <p>Slim Fit </p>The model (height 6') is wearing a size M
               </>
             }
@@ -62,7 +67,7 @@ function Productdescription() {
             tooltiptext={
               <>
                 Garment Measurement:
-                <span className={styles.tips}>Chest - 39.5in</span>
+                <b> Chest - 39.5in</b>
                 <p>Slim Fit </p>The model (height 6') is wearing a size M
               </>
             }
@@ -74,7 +79,9 @@ function Productdescription() {
             tooltiptext={
               <>
                 Garment Measurement:
-                <span className={styles.tips}>Chest - 41.5in</span>
+                <span className={styles.tips}>
+                  <b>Chest - 41.5in</b>
+                </span>
                 <p>Slim Fit </p>The model (height 6') is wearing a size M
               </>
             }
@@ -85,7 +92,7 @@ function Productdescription() {
             tooltiptext={
               <>
                 Garment Measurement:
-                <span className={styles.tips}>Chest - 43.5in</span>
+                <b>Chest - 43.5in</b>
                 <p>Slim Fit </p>The model (height 6') is wearing a size M
               </>
             }
@@ -97,19 +104,33 @@ function Productdescription() {
             tooltiptext={
               <>
                 Garment Measurement:
-                <span className={styles.tips}>Chest - 45.5in</span>
+                <b>Chest - 45.5in</b>
                 <p>Slim Fit </p>The model (height 6') is wearing a size M
               </>
             }
           />
         </div>
 
-        <div>
-          <Button type={"primary"}>ADD TO BAG</Button>
-          <Button type={"secondary"}>WISHLIST</Button>
+        <div className={styles.fonts}>
+          <Button type={"primary"} className={styles.wide}>
+            <FontAwesomeIcon icon={faBagShopping} />
+            <p className={styles.word}> ADD TO BAG</p>
+          </Button>
+          <Button className={styles["wishlist-btn"]} type={"secondary"}>
+            <FontAwesomeIcon icon={faHeart} />
+            <p className={styles.word}> WISHLIST</p>
+          </Button>
         </div>
-
-        <hr className={styles["line"]}></hr>
+        <div className={styles.delivery}>
+          <p className={styles["sel"]}>DELIVERY OPTIONS </p>
+          <FontAwesomeIcon icon={faTruck} className={styles.car} />
+        </div>
+        <NumberInputBox>
+          <p>
+            Please enter PIN code to check delivery time & Pay on Delivery
+            Availability
+          </p>
+        </NumberInputBox>
       </div>
     </div>
   );

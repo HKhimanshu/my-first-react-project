@@ -59,6 +59,23 @@
   position: relative;
 }
 
-.disableds button p {
-  color: gray;
+.wishlist-btn {
+  margin-left: 10px;
+}
+.fonts {
+  margin-top: 40px;
+}
+.word {
+  margin-left: 9px;
+}
+.wide {
+  width: 300px;
+}
+.delivery {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.car {
+  margin-left: 9px;
 }
