@@ -1,12 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBagShopping, faTruck } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBagShopping,
+  faTags,
+  faTruck,
+} from "@fortawesome/free-solid-svg-icons";
 import Button from "../molecules/button/button";
 import ProductVariantSize from "../molecules/product/product-variant-size";
 import styles from "./product.module.css";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faHeart, faMessage } from "@fortawesome/free-regular-svg-icons";
 import NumberInputBox from "../molecules/input-box/number-input-box";
+import ImagesViewer from "../images-viewer";
+import { useState } from "react";
+import ProductdSpecifications from "../molecules/product/product-specifications";
 
 function Productdescription() {
+  const [showImageViewer, setShowImageViewer] = useState(false);
+  const specifications = [
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+  ];
   const images = [
     {
       url: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/17026506/2022/8/11/9c3f2537-89ba-417e-9d28-1d9be3abaa201660212949815-WROGN-Men-Tshirts-8871660212949259-3.jpg",
@@ -28,12 +41,23 @@ function Productdescription() {
     <div className={styles["prent"]}>
       <div className={styles["ims"]}>
         {images.map((o) => (
-          <div className={styles["wid"]}>
+          <div
+            className={styles["wid"]}
+            onClick={() => setShowImageViewer(true)}
+          >
             <div className={styles["images"]}>
               <img src={o.url}></img>
             </div>
           </div>
         ))}
+        {showImageViewer && (
+          <div className={styles.imageviewer}>
+            <ImagesViewer
+              images={images}
+              close={() => setShowImageViewer(false)}
+            />
+          </div>
+        )}
       </div>
 
       <div className={styles["leftdiv"]}>
@@ -43,7 +67,7 @@ function Productdescription() {
         </p>
         <hr className={styles["line"]}></hr>
 
-        <h2>₹319</h2>
+        <h2>₹10</h2>
         <h4 className={styles["inc"]}>inclusive of all taxes</h4>
         <div className={styles["sold"]}>
           <p className={styles["sel"]}>SELECT SIZE</p>
@@ -125,12 +149,101 @@ function Productdescription() {
           <p className={styles["sel"]}>DELIVERY OPTIONS </p>
           <FontAwesomeIcon icon={faTruck} className={styles.car} />
         </div>
-        <NumberInputBox>
-          <p>
-            Please enter PIN code to check delivery time & Pay on Delivery
-            Availability
+        <NumberInputBox></NumberInputBox>
+        <p>
+          Please enter PIN code to check delivery time & Pay on Delivery
+          Availability
+        </p>
+        <div className={styles.original}>
+          <p>100% Original Products</p>
+          <p>Pay on delivery might be available</p>
+          <p>Easy 14 days returns and exchanges</p>
+          <p>Try & Buy might be available</p>
+        </div>
+        <div className={styles.delivery}>
+          <p className={styles["sel"]}>
+            BEST OFFERS
+            <FontAwesomeIcon icon={faTags} className={styles.tag} />
           </p>
-        </NumberInputBox>
+        </div>
+        <div className={styles.best}>
+          <b>
+            Best prices:<span className={styles.rs}>Rs.255</span>
+          </b>
+          <ul>
+            <li>
+              Applicable on: Orders above Rs. 999 (only on first purchase)
+            </li>
+            <li>
+              Coupon code: <b>MYNTRA200</b>
+            </li>
+            <li>Coupon Discount: Rs. 64 off (check cart for final savings)</li>
+          </ul>
+        </div>
+        <div className={styles.views}>
+          <b>View Eligible Products</b>
+          <p className={styles.cards}>
+            10% Instant Discount on SBI Credit Cards
+          </p>
+          <ul>
+            <li>on min Spend Rs 3,000. Maximum Discount Rs 1,000.</li>
+          </ul>
+        </div>
+        <div className={styles.views}>
+          <b>Terms & Condition</b>
+          <p className={styles.cards}>
+            Up To Rs 500 Cashback on CRED pay transactions.
+          </p>
+          <ul>
+            <li>Min Spend Rs 1,000. Available only on Android Devices.</li>
+          </ul>
+        </div>
+
+        <div className={styles.views}>
+          <b>Terms & Condition</b>
+          <p className={styles.cards}>EMI option available</p>
+          <ul>
+            <li>EMI starting from Rs.15/month</li>
+          </ul>
+        </div>
+        <div className={styles.views}>
+          <b>View Plan</b>
+        </div>
+        <hr className={styles["lines"]}></hr>
+        <div className={styles.delivery}>
+          <p className={styles.product}>
+            <p className={styles["sel"]}>
+              PRODUCT DETAILS
+              <FontAwesomeIcon icon={faMessage} className={styles.mess} />
+            </p>
+            <p>Blue Tshirt for men</p>
+            <p>Typography printed</p>
+            <p>Regular length</p>
+            <p>Round neck</p>
+            <p>Short, regular sleeves</p>
+            <p>Knitted cotton fabric</p>
+          </p>
+        </div>
+        <div className={styles.delivery}>
+          {" "}
+          <p>
+            <p className={styles["sel"]}>Size & Fit </p>
+
+            <p>Slim Fit</p>
+            <p>The model (height 6') is wearing a size M</p>
+          </p>
+        </div>
+
+        <div className={styles.delivery}>
+          <p>
+            <p className={styles["sel"]}>Material & Care </p>
+
+            <p>60% cotton 40% polyester</p>
+            <p>Machine wash</p>
+          </p>
+        </div>
+        <p className={styles["sels"]}>Specifications </p>
+        <ProductdSpecifications data={specifications} />
       </div>
     </div>
   );

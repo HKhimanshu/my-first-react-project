@@ -1,0 +1,26 @@
+.indextableContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.indexrow {
+  position: relative;
+  border-bottom: 1px solid #eaeaec;
+  margin: 0 0 12px;
+  margin-right: 10%;
+  padding-bottom: 10px;
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+}
+.indexrowKey {
+  position: relative;
+  color: #7e818c;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.indexrowValue {
+  position: relative;
+  color: #282c3f;
+  font-size: 16px;
+  line-height: 1.2;
+}

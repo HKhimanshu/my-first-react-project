@@ -72,10 +72,81 @@
   width: 300px;
 }
 .delivery {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
 }
 .car {
   margin-left: 9px;
+}
+.original {
+  margin-top: 25px;
+}
+.original p {
+  margin-top: 10px;
+}
+.best {
+  margin-top: 30px;
+}
+.best ul li {
+  margin: 10px 18px;
+}
+.views b {
+  display: block;
+  color: #ff3e6c;
+  margin-top: 29px;
+}
+.rs {
+  color: #ff905a;
+  font-weight: 700;
+}
+.tag {
+  margin-left: 9px;
+}
+.views p {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.views ul li {
+  margin: 10px 18px;
+}
+.views b:hover {
+  cursor: pointer;
+}
+.lines {
+  margin: 35px 0;
+}
+.product p {
+  margin-top: 4px;
+}
+.mess {
+  margin-left: 8px;
+}
+.imageviewer {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+.sels {
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.fab {
+  position: relative;
+  color: #7e818c;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.cott {
+  position: relative;
+  color: #282c3f;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.heig {
+  margin-top: 10px;
 }
