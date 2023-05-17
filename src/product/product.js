@@ -242,7 +242,7 @@ function Productdescription() {
             <p>Machine wash</p>
           </p>
         </div>
-        <p className={styles["sels"]}>Specifications </p>
+        <p className={styles["sels"]}>Speci fications </p>
         <ProductdSpecifications data={specifications} />
       </div>
     </div>
