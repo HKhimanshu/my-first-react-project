@@ -8,6 +8,7 @@
   width: 50%;
   max-width: 50%;
   padding: 10px;
+  height: 1000px;
 }
 .images img {
   transition: transform 0.4s;

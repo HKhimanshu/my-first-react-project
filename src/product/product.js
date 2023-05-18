@@ -12,10 +12,29 @@ import NumberInputBox from "../molecules/input-box/number-input-box";
 import ImagesViewer from "../images-viewer";
 import { useState } from "react";
 import ProductdSpecifications from "../molecules/product/product-specifications";
+import ProductRating from "./product-rating";
 
 function Productdescription() {
   const [showImageViewer, setShowImageViewer] = useState(false);
   const specifications = [
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
+    { type: "febric", value: "Cotton" },
     { type: "febric", value: "Cotton" },
     { type: "febric", value: "Cotton" },
     { type: "febric", value: "Cotton" },
@@ -244,6 +263,8 @@ function Productdescription() {
         </div>
         <p className={styles["sels"]}>Speci fications </p>
         <ProductdSpecifications data={specifications} />
+        <hr className={styles["line"]}></hr>
+        <ProductRating></ProductRating>
       </div>
     </div>
   );

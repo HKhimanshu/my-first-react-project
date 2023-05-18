@@ -32,3 +32,13 @@
 .secondary:hover {
   border-color: #000000;
 }
+.link {
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  height: auto;
+  width: auto;
+  min-width: auto;
+  color: #ff3e6c;
+  margin-top: 10px;
+}
