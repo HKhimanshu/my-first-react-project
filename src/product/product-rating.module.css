@@ -3,6 +3,19 @@
   margin-bottom: 30px;
 }
 .four {
+  border-right: 1px solid;
   font-size: 45px;
   font-weight: 400;
+}
+.star {
+  font-size: 25px;
+  color: #2d7d43;
+  margin-bottom: 5px;
+}
+
+.review_bar {
+  vertical-align: baseline;
+  color: #fff;
+  background: #f5f5f6;
+  border: none;
 }

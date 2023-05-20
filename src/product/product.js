@@ -86,7 +86,7 @@ function Productdescription() {
         </p>
         <hr className={styles["line"]}></hr>
 
-        <h2>₹10</h2>
+        <h2>₹1</h2>
         <h4 className={styles["inc"]}>inclusive of all taxes</h4>
         <div className={styles["sold"]}>
           <p className={styles["sel"]}>SELECT SIZE</p>
@@ -265,6 +265,17 @@ function Productdescription() {
         <ProductdSpecifications data={specifications} />
         <hr className={styles["line"]}></hr>
         <ProductRating></ProductRating>
+        <hr className={styles["line"]}></hr>
+
+        <div>
+          <p>
+            Product Code: <b>17026506</b>
+          </p>
+          <p>
+            Seller
+            <Button></Button>
+          </p>
+        </div>
       </div>
     </div>
   );
