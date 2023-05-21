@@ -151,3 +151,16 @@
 .heig {
   margin-top: 10px;
 }
+
+.flash {
+  font-weight: 700;
+  color: #ff3e6c;
+}
+
+.foot p {
+  margin-top: 10px;
+}
+.hello {
+  margin-top: 10px;
+  font-weight: 700;
+}

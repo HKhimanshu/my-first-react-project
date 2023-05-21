@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
+  faStar,
   faTags,
   faTruck,
 } from "@fortawesome/free-solid-svg-icons";
@@ -264,17 +265,20 @@ function Productdescription() {
         <p className={styles["sels"]}>Speci fications </p>
         <ProductdSpecifications data={specifications} />
         <hr className={styles["line"]}></hr>
+        <p className={styles.rating}>
+          Ratings <FontAwesomeIcon icon={faStar} />
+        </p>
         <ProductRating></ProductRating>
         <hr className={styles["line"]}></hr>
 
-        <div>
+        <div className={styles.foot}>
           <p>
             Product Code: <b>17026506</b>
           </p>
           <p>
-            Seller
-            <Button></Button>
+            Seller:<span className={styles.flash}> Flashstar Commerce</span>
           </p>
+          <p className={styles.hello}>View Supplier Information</p>
         </div>
       </div>
     </div>
