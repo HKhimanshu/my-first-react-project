@@ -1,0 +1,11 @@
+.search {
+  width: 250px;
+  height: 40px;
+  margin-left: 150px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+}
+.allfrom {
+  display: flex;
+}
