@@ -9,3 +9,48 @@
 .allfrom {
   display: flex;
 }
+.filter {
+  display: flex;
+}
+.content {
+  margin-left: 10px;
+  background-color: #fff;
+  border: none;
+  height: 35px;
+  padding-left: 35px;
+  width: 80px;
+  font-weight: 700;
+  border: 1px solid gainsboro;
+}
+.order {
+  background-color: rgb(196, 193, 193);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 600px;
+}
+.person {
+  background-color: #fff;
+  margin: 8px;
+  flex: 1;
+  padding: 20px;
+}
+.packed {
+  font-weight: 700;
+
+  color: rgb(3, 166, 133);
+}
+.details {
+  background-color: rgb(241, 241, 241);
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+}
+.details div img {
+  height: 70px;
+  width: 50px;
+}
+.size {
+  margin-left: 25px;
+}
