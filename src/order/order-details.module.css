@@ -1,0 +1,39 @@
+/* .container {
+  width: 100%;
+  background-color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+} */
+.himanshu {
+  margin: 10px;
+}
+.line {
+  margin-top: 15px;
+  width: 850px;
+}
+.over {
+  padding: 20px 0;
+  width: 145px;
+}
+.rrr {
+  width: 150px;
+}
+.out {
+  padding: 20px 0;
+  width: 145px;
+  margin-top: 10px;
+  color: #7e818c;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.returns {
+  color: #14cda8;
+  margin-bottom: 25px;
+  overflow: hidden;
+
+  font-weight: 700;
+}
+.returns:hover {
+  cursor: pointer;
+  overflow: hidden;
+}
