@@ -41,47 +41,55 @@
 
   color: rgb(3, 166, 133);
 }
-.details {
-  background-color: rgb(255, 242, 242);
-  border-radius: 2px;
-  margin-top: 10px;
-  padding: 10px;
-}
-.details div img {
-  height: 70px;
-  width: 50px;
-}
-.size {
-  margin-left: 25px;
-}
-.cancle {
-  background-color: #fff;
-  border: none;
-  margin-top: 20px;
-  padding: 7px 200px;
-  width: 100%;
-  text-align: center;
-  border: 2px solid gainsboro;
-}
-.cancle:hover {
-  cursor: pointer;
-}
-.code {
-  display: flex;
-}
 
-.box {
+.ram {
   background-color: rgb(3, 166, 133);
   color: #fff;
-  width: 31px;
+  width: 20px;
   border-radius: 50%;
-  text-align: center;
-  height: 33px;
+}
+.box {
+  background-color: rgb(3, 166, 133);
+  /* height: 33px; */
+  display: block;
   padding: 5px;
-  justify-content: center;
+  border-radius: 50%;
+  height: 30px;
+  /* padding: 5px; */
+  /* width: 33px; */
   top: 50%;
 }
-.details:hover {
-  background-color: #ffe8e8;
+
+.fom {
+  display: flex;
+}
+.job {
+  margin-left: 10px;
+}
+.request {
+  font-size: 12px;
+  color: #727272;
+}
+.refund {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #03a685;
+  font-weight: 700;
+}
+.view {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff3f6c;
   cursor: pointer;
+}
+.boxs {
+  background-color: rgb(156, 156, 156);
+  /* height: 33px; */
+  display: block;
+  padding: 5px;
+  border-radius: 50%;
+  height: 30px;
+  /* padding: 5px; */
+  /* width: 33px; */
+  top: 50%;
 }

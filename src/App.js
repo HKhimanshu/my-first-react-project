@@ -16,8 +16,8 @@ function App() {
       {/* <ImagesViewer></ImagesViewer> */}
       {/* <Productdescription></Productdescription> */}
       {/* <Imagecarousss></Imagecarous> */}
-      {/* <ProductOrder></ProductOrder> */}
-      <OrderDetails></OrderDetails>
+      <ProductOrder></ProductOrder>
+      {/* <OrderDetails></OrderDetails> */}
       {/* <Imagesliderexample></Imagesliderexample> */}
     </>
   );

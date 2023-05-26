@@ -1,7 +1,57 @@
 import { faBox, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import style from "./order.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import OrderDetail from "./orderdetails-view";
+import moment from "moment/moment";
 function ProductOrder() {
+  const data = [
+    {
+      status: "canclled",
+      orderDate: moment(),
+      cancelledData: moment(),
+      expectedDate: moment(),
+      amount: "159",
+      item: {
+        name: "jeans",
+        image:
+          "https://navbharattimes.indiatimes.com/photo/msid-89982887,imgsize-60574/pic.jpg",
+        subtitles: ["himanshu", "kumar"],
+      },
+    },
+    {
+      status: "shipped",
+      orderDate: moment(),
+      cancelledData: moment(),
+      expectedDate: moment(),
+      amount: "159",
+      item: {
+        name: "INDALO",
+        image:
+          "https://assets.myntassets.com/f_webp,dpr_1,q_10,w_200,c_limit,fl_progressive/assets/images/22374132/2023/3/17/53979edc-0808-4160-ab11-addc96a4e65f1679031423741IndaloMultaniMittiPowderForSkinHairRepairForAllSkinHairTypes1.webp",
+        subtitles: [
+          "Multani Mitti Powder for Skin & Hair Repair - 100g",
+          "Size: 100-120 ML",
+        ],
+      },
+    },
+    {
+      status: "delivered",
+      orderDate: moment(),
+      cancelledData: moment(),
+      expectedDate: moment(),
+      amount: "159",
+      item: {
+        name: "shirt",
+        image:
+          "https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing_158538-4909.jpg",
+        subtitles: [
+          "500+ Shirt Pictures | Download Free Images on Unsplash",
+          "dkjdkfjsdkjf",
+        ],
+      },
+    },
+  ];
+
   return (
     <div>
       <div className={style.allfrom}>
@@ -18,26 +68,39 @@ function ProductOrder() {
       </div>
       <div className={style.order}>
         <div className={style.person}>
-          <div className={style.box}>
-            <FontAwesomeIcon icon={faBox} />
-          </div>{" "}
-          <p className={style.packed}>packed</p>
-          <p>Arriving by Fri, 2 Jun</p>
-          <div className={style.details}>
-            <div className={style.code}>
-              <div>
-                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/15760662/2021/10/7/05de2226-2df8-4c6a-8572-25f56f7b34fe1633612031245Cold-pressedWhiteSesameOil250ml1.jpg"></img>
-              </div>
-              <div className={style.size}>
-                <b>ESSENTIA EXTRACTS</b>
-                <p>Cold-Pressed White Sesame Oil-250ml</p>
-                <p>size:250ml</p>
-              </div>
+          <div className={style.fom}>
+            <div className={style.box}>
+              <FontAwesomeIcon icon={faBox} className={style.ram} />
             </div>
-            <button className={style.cancle}>
-              <b>Cancle</b>
-            </button>
+            <div className={style.job}>
+              <p className={style.packed}>packed</p>
+              <p>Arriving by Fri, 2 Jun</p>
+            </div>
           </div>
+          <OrderDetail></OrderDetail>
+        </div>
+      </div>
+
+      <div className={style.order}>
+        <div className={style.person}>
+          <div className={style.fom}>
+            <div className={style.boxs}>
+              <p>X</p>
+            </div>
+            <div className={style.job}>
+              <b>Cancle</b>
+              <p className={style.request}>
+                on Tue, 23 May as per your request
+              </p>
+              <p>
+                <span className={style.refund}>Refund Initiated:</span>
+                <b> ₹159.00</b>
+                <span className={style.request}> on Tue, 23 May.</span>
+                <span className={style.view}> View Refund details</span>
+              </p>
+            </div>
+          </div>
+          <OrderDetail></OrderDetail>
         </div>
       </div>
     </div>

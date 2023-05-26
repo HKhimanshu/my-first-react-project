@@ -1,0 +1,32 @@
+.details {
+  background-color: rgb(255, 242, 242);
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.details div img {
+  height: 70px;
+  width: 50px;
+}
+.details:hover {
+  background-color: #ffe8e8;
+  cursor: pointer;
+}
+.code {
+  display: flex;
+}
+.size {
+  margin-left: 25px;
+}
+.cancle {
+  background-color: #fff;
+  border: none;
+  margin-top: 20px;
+  padding: 7px 200px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid gainsboro;
+}
+.cancle:hover {
+  cursor: pointer;
+}
