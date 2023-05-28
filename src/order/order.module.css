@@ -1,13 +1,15 @@
 .search {
   width: 250px;
   height: 40px;
-  margin-left: 150px;
   align-items: center;
   justify-content: center;
   border: 1px solid gray;
 }
 .allfrom {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .filter {
   display: flex;
@@ -23,12 +25,10 @@
   border: 1px solid gainsboro;
 }
 .order {
-  margin-top: 20px;
-  background-color: rgb(196, 193, 193);
+  background-color: #f2f4f4;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 600px;
+  width: 100%;
 }
 .person {
   background-color: #fff;
@@ -57,7 +57,6 @@
   height: 30px;
   /* padding: 5px; */
   /* width: 33px; */
-  top: 50%;
 }
 
 .fom {
@@ -84,12 +83,13 @@
 }
 .boxs {
   background-color: rgb(156, 156, 156);
-  /* height: 33px; */
   display: block;
-  padding: 5px;
   border-radius: 50%;
-  height: 30px;
-  /* padding: 5px; */
-  /* width: 33px; */
-  top: 50%;
+  height: 26px;
+  width: 22px;
+  text-align: center;
+}
+
+.fromany {
+  width: 700px;
 }

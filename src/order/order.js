@@ -54,7 +54,7 @@ function ProductOrder() {
   ];
 
   return (
-    <div>
+    <div className={style.fromany}>
       <div className={style.allfrom}>
         <div>
           <h2>All orders</h2>
@@ -67,56 +67,56 @@ function ProductOrder() {
           </div>
         </div>
       </div>
-
-      {data.map((o) => (
-        <div className={style.order}>
-          <div className={style.person}>
-            {o.status == "shipped" && (
-              <div className={style.fom}>
-                <div className={style.box}>
-                  <FontAwesomeIcon icon={faBox} className={style.ram} />
+      <div>
+        {data.map((o) => (
+          <div className={style.order}>
+            <div className={style.person}>
+              {o.status == "shipped" && (
+                <div className={style.fom}>
+                  <div className={style.box}>
+                    <FontAwesomeIcon icon={faBox} className={style.ram} />
+                  </div>
+                  <div className={style.job}>
+                    <p className={style.packed}>packed</p>
+                    <p>Arriving by Fri, 2 Jun</p>
+                  </div>
                 </div>
-                <div className={style.job}>
-                  <p className={style.packed}>packed</p>
-                  <p>Arriving by Fri, 2 Jun</p>
+              )}
+              {o.status == "cancelled" && (
+                <div className={style.fom}>
+                  <div className={style.boxs}>
+                    <p>X</p>
+                  </div>
+                  <div className={style.job}>
+                    <b>Cancle</b>
+                    <p className={style.request}>
+                      on Tue, 23 May as per your request
+                    </p>
+                    <p>
+                      <span className={style.refund}>Refund Initiated:</span>
+                      <b> ₹159.00</b>
+                      <span className={style.request}> on Tue, 23 May.</span>
+                      <span className={style.view}> View Refund details</span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            )}
-            {o.status == "cancelled" && (
-              <div className={style.fom}>
-                <div className={style.boxs}>
-                  <p>X</p>
+              )}
+              {o.status == "delivered" && (
+                <div className={style.fom}>
+                  <div className={style.box}>
+                    <FontAwesomeIcon icon={faBox} className={style.ram} />
+                  </div>
+                  <div className={style.job}>
+                    <p className={style.packed}>packed</p>
+                    <p>Arriving by Fri, 2 Jun</p>
+                  </div>
                 </div>
-                <div className={style.job}>
-                  <b>Cancle</b>
-                  <p className={style.request}>
-                    on Tue, 23 May as per your request
-                  </p>
-                  <p>
-                    <span className={style.refund}>Refund Initiated:</span>
-                    <b> ₹159.00</b>
-                    <span className={style.request}> on Tue, 23 May.</span>
-                    <span className={style.view}> View Refund details</span>
-                  </p>
-                </div>
-              </div>
-            )}
-            {o.status == "delivered" && (
-              <div className={style.fom}>
-                <div className={style.box}>
-                  <FontAwesomeIcon icon={faBox} className={style.ram} />
-                </div>
-                <div className={style.job}>
-                  <p className={style.packed}>packed</p>
-                  <p>Arriving by Fri, 2 Jun</p>
-                </div>
-              </div>
-            )}
-            <OrderDetail item={o.item} canCancle={o.canCancle}></OrderDetail>
+              )}
+              <OrderDetail item={o.item} canCancle={o.canCancle}></OrderDetail>
+            </div>
           </div>
-        </div>
-      ))}
-
+        ))}
+      </div>
       {/* <div className={style.order}>
         <div className={style.person}>
           <div className={style.fom}>

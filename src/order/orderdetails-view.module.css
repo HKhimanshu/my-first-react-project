@@ -1,5 +1,5 @@
 .details {
-  background-color: rgb(255, 242, 242);
+  background-color: #f2f4f4;
   border-radius: 2px;
   margin-top: 10px;
   padding: 10px;
@@ -9,7 +9,7 @@
   width: 50px;
 }
 .details:hover {
-  background-color: #ffe8e8;
+  background-color: #e5e8e8;
   cursor: pointer;
 }
 .code {
@@ -22,7 +22,7 @@
   background-color: #fff;
   border: none;
   margin-top: 20px;
-  padding: 7px 200px;
+  padding: 7px 20px;
   width: 100%;
   text-align: center;
   border: 2px solid gainsboro;
