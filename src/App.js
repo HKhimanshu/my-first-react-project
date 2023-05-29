@@ -9,6 +9,8 @@ import Productdescription from "./product/product";
 import ImagesViewer from "./images-viewer";
 import ProductOrder from "./order/order";
 import OrderDetails from "./order/order-details";
+import SearchInput from "./Search/search-input";
+import OrderItems from "./order/orderitems-details";
 
 function App() {
   return (
@@ -16,9 +18,11 @@ function App() {
       {/* <ImagesViewer></ImagesViewer> */}
       {/* <Productdescription></Productdescription> */}
       {/* <Imagecarousss></Imagecarous> */}
-      <ProductOrder></ProductOrder>
+      {/* <ProductOrder></ProductOrder> */}
+      <OrderItems></OrderItems>
       {/* <OrderDetails></OrderDetails> */}
       {/* <Imagesliderexample></Imagesliderexample> */}
+      {/* <SearchInput></SearchInput> */}
     </>
   );
 }

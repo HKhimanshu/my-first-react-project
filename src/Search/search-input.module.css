@@ -1,0 +1,26 @@
+.searchbtn {
+  border: none;
+  width: 200px;
+  outline: none;
+  margin-left: 15px;
+}
+.content {
+  display: flex;
+  padding: 10px;
+  border: 1px solid black;
+}
+.searchicon {
+  cursor: pointer;
+  color: #a3a3a3;
+  font-size: 12px;
+}
+.cutbtn {
+  background-color: #b8b3b3;
+  color: #fff;
+  cursor: default;
+  height: 15px;
+  width: 13px;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 50%;
+}

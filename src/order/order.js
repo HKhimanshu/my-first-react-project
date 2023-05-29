@@ -1,8 +1,13 @@
-import { faBox, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBox,
+  faMagnifyingGlass,
+  faSliders,
+} from "@fortawesome/free-solid-svg-icons";
 import style from "./order.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import OrderDetail from "./orderdetails-view";
 import moment from "moment/moment";
+import SearchInput from "../Search/search-input";
 function ProductOrder() {
   const data = [
     {
@@ -61,9 +66,12 @@ function ProductOrder() {
           <p>from anytime</p>
         </div>
         <div className={style.filter}>
-          <div className={style.search}></div>
-          <div>
-            <button className={style.content}>FILTER</button>
+          <SearchInput />
+          <div className={style.hima}>
+            <button className={style.content}>
+              <FontAwesomeIcon icon={faSliders} />
+              FILTER
+            </button>
           </div>
         </div>
       </div>

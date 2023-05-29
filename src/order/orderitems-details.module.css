@@ -1,0 +1,28 @@
+.maincontent {
+  background-color: #e5e2e2;
+  width: 700px;
+}
+.himanshu {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.help {
+  margin-right: 15px;
+  font-weight: 600;
+}
+.headphone {
+  background-color: #fff;
+  align-items: center;
+  margin-right: 15px;
+  padding: 7px;
+  border-radius: 50%;
+}
+.seconddiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cold {
+  text-align: center;
+}

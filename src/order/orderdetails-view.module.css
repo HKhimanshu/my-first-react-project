@@ -17,6 +17,10 @@
 }
 .size {
   margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .cancle {
   background-color: #fff;
@@ -29,4 +33,8 @@
 }
 .cancle:hover {
   cursor: pointer;
+}
+.great {
+  font-size: 28px;
+  color: rgb(175, 171, 171);
 }

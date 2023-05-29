@@ -7,10 +7,13 @@ function OrderDetail({ item, canCancle }) {
           <img src={item.image}></img>
         </div>
         <div className={style.size}>
-          <b>{item.name}</b>
-          {item.subtitles.map((i) => (
-            <p>{i}</p>
-          ))}
+          <div>
+            <b>{item.name}</b>
+            {item.subtitles.map((i) => (
+              <p>{i}</p>
+            ))}
+          </div>
+          <div className={style.great}>&gt;</div>
         </div>
       </div>
       {canCancle && (
