@@ -1,6 +1,7 @@
 .maincontent {
   background-color: #e5e2e2;
   width: 700px;
+  padding: 4px;
 }
 .himanshu {
   display: flex;
@@ -10,9 +11,11 @@
 .help {
   margin-right: 15px;
   font-weight: 600;
+  cursor: pointer;
 }
 .headphone {
   background-color: #fff;
+  cursor: pointer;
   align-items: center;
   margin-right: 15px;
   padding: 7px;
@@ -25,4 +28,80 @@
 }
 .cold {
   text-align: center;
+}
+.csk {
+  width: 32%;
+}
+.dam {
+  background-color: #fff;
+  border: 1px solid gainsboro;
+  overflow-x: hidden;
+  padding: 10px;
+}
+.ram {
+  background-color: #fff;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  overflow-x: hidden;
+}
+.shipped {
+  padding: 10px 10px;
+  overflow-x: hidden;
+}
+.arriving {
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 9px;
+}
+.jun {
+  font-size: 11px;
+  font-weight: 600;
+  padding-left: 15px;
+  color: #94969f;
+}
+.hello {
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
+.tiltles {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.subtext {
+  color: #dfd6d6;
+  font-size: 10px;
+}
+.team {
+  margin: 20px 49px 0;
+}
+.great {
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #049f81;
+  cursor: pointer;
+
+  border: 1px solid gainsboro;
+}
+.kumar {
+  font-size: 20px;
+  color: white;
+  margin-right: 15px;
+}
+.hero {
+  background-color: #fff;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.expirydate {
+  padding: 5px;
+  margin-left: 25px;
+}
+.sun {
+  margin-left: 40px;
 }
