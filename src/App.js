@@ -11,6 +11,7 @@ import ProductOrder from "./order/order";
 import OrderDetails from "./order/order-details";
 import SearchInput from "./Search/search-input";
 import OrderItems from "./order/orderitems-details";
+import TimelineItem from "./timeline/timelineitem";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       {/* <Productdescription></Productdescription> */}
       {/* <Imagecarousss></Imagecarous> */}
       {/* <ProductOrder></ProductOrder> */}
-      <OrderItems></OrderItems>
+      {/* <OrderItems></OrderItems> */}
+      <TimelineItem></TimelineItem>
       {/* <OrderDetails></OrderDetails> */}
       {/* <Imagesliderexample></Imagesliderexample> */}
       {/* <SearchInput></SearchInput> */}
