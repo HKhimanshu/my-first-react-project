@@ -1,5 +1,5 @@
-import style from "./orderdetails-view.module.css";
-function OrderDetail({ item, canCancle }) {
+import style from './orderdetails-view.module.css';
+function OrderDetail({ item, canCancle, canReturn }) {
   return (
     <div className={style.details}>
       <div className={style.code}>
@@ -19,6 +19,11 @@ function OrderDetail({ item, canCancle }) {
       {canCancle && (
         <button className={style.cancle}>
           <b>Cancle</b>
+        </button>
+      )}
+      {canReturn && (
+        <button className={style.cancle}>
+          <b>Return</b>
         </button>
       )}
     </div>

@@ -29,7 +29,7 @@
   width: 15px;
 }
 .ggg {
-  border-left: 3px solid #03a685;
+  border-left: 2px solid #03a685;
   height: 20px;
 }
 .herr {
@@ -46,4 +46,62 @@
 }
 .maindiv {
   display: flex;
+}
+.hero {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 500px;
+  margin: 0 auto;
+  top: 50%;
+  padding: 20px;
+  left: 50%;
+}
+.track {
+  margin-bottom: 36px;
+  margin-left: 4px;
+}
+
+.trackitem {
+  font-size: 18px;
+  font-weight: 700;
+}
+.tracking {
+  line-height: 1.5;
+  color: #686b78;
+  margin: 4px 0;
+  font-size: 14px;
+}
+.title {
+  color: #03a685;
+  padding-left: 7.5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.csk {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+}
+.subtitle {
+  color: #6c6464;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.text {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+}
+.maindiv.start .text {
+  align-items: flex-end;
+}
+.maindiv.end .text {
+  align-items: flex-start;
+}
+.maindiv.dot .text .title {
+  color: #696e79;
+}
+.cut {
+  cursor: pointer;
 }

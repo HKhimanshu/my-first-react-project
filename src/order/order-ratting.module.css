@@ -1,0 +1,26 @@
+.star {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #918a8a;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.star:hover {
+  transition: 0.4s;
+
+  color: #ff3f6c;
+}
+.gamer {
+  display: flex;
+  margin: 3px 0;
+  padding: 10px;
+  align-items: center;
+  background-color: #f2f4f4;
+  justify-content: space-between;
+}
+.write {
+  color: #ff3f6c;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+}

@@ -87,8 +87,8 @@
   background-color: rgb(156, 156, 156);
   display: block;
   border-radius: 50%;
-  height: 26px;
-  width: 22px;
+  height: 21px;
+  width: 21px;
   text-align: center;
 }
 
@@ -97,4 +97,23 @@
 }
 .hima {
   padding: 0 10px;
+}
+.dot {
+  height: 9px;
+  display: flex;
+  background-color: gray;
+  width: 9px;
+  border-radius: 50%;
+}
+.game {
+  display: flex;
+  margin: 3px 0;
+  padding: 10px;
+  align-items: center;
+  background-color: #f2f4f4;
+}
+.closed {
+  font-size: 14px;
+  color: rgb(105, 110, 121);
+  margin-left: 10px;
 }
