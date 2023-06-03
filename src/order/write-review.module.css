@@ -1,0 +1,74 @@
+.maincontainer {
+  background-color: #fff;
+  width: 700px;
+  margin: auto;
+}
+.write {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #535766;
+}
+.fox {
+  padding: 10px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.cont {
+  position: absolute;
+  left: 25px;
+  color: #535766;
+  top: 15px;
+}
+.hehe {
+  width: 75px;
+  max-height: 100%;
+}
+.cold {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #535766;
+}
+.hero {
+  margin-left: 45px;
+  text-align: left;
+}
+.star {
+  margin-right: 9px;
+  margin-top: 5px;
+  color: #ff3e6c;
+}
+.graystar {
+  margin-right: 9px;
+  color: gainsboro;
+  margin-top: 5px;
+}
+.writer {
+  overflow: auto;
+  font-size: 10px;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  height: 227px;
+
+  border: 2px solid gainsboro;
+}
+.please {
+  padding: 20px;
+}
+.content {
+  display: flex;
+}
+.gallery {
+  width: 60px;
+  height: 60px;
+  vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+  outline: none;
+  outline: 1px dashed;
+}
