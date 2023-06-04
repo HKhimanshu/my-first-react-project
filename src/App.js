@@ -20,8 +20,8 @@ function App() {
       {/* <ImagesViewer></ImagesViewer> */}
       {/* <Productdescription></Productdescription> */}
       {/* <ProductOrder></ProductOrder> */}
-      {/* <WriteReview></WriteReview> */}
-      <Uploader></Uploader>
+      <WriteReview></WriteReview>
+      {/* <Uploader></Uploader> */}
       {/* <OrderItems></OrderItems> */}
       {/* <TimelineItem></TimelineItem> */}
       {/* <OrderDetails></OrderDetails> */}

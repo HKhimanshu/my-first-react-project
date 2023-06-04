@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './write-review.module.css';
 import { faStar, faX } from '@fortawesome/free-solid-svg-icons';
 import { faImage } from '@fortawesome/free-regular-svg-icons';
+import Uploader from './uploder';
 function WriteReview() {
   return (
     <div className={styles.maincontainer}>
@@ -33,9 +34,7 @@ function WriteReview() {
           className={styles.writer}
         ></textarea>
       </div>
-      <div className={styles.gallery}>
-        <FontAwesomeIcon icon={faImage} />
-      </div>
+      <Uploader></Uploader>
     </div>
   );
 }

@@ -61,14 +61,3 @@
 .content {
   display: flex;
 }
-.gallery {
-  width: 60px;
-  height: 60px;
-  vertical-align: top;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 16px;
-  outline: none;
-  outline: 1px dashed;
-}
