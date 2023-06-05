@@ -2,6 +2,7 @@ import {
   faBox,
   faMagnifyingGlass,
   faSliders,
+  faX,
 } from '@fortawesome/free-solid-svg-icons';
 import style from './order.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +10,11 @@ import OrderDetail from './orderdetails-view';
 import moment from 'moment/moment';
 import SearchInput from '../Search/search-input';
 import OrderRatting from './order-ratting';
+import Modal from '../modal/modal';
+import { useState } from 'react';
 function ProductOrder() {
+  const [showModal, setShowModal] = useState(false);
+  const closeModal = () => setShowModal(false);
   const data = [
     {
       status: 'cancelled',
@@ -70,7 +75,10 @@ function ProductOrder() {
         <div className={style.filter}>
           <SearchInput />
           <div className={style.hima}>
-            <button className={style.content}>
+            <button
+              className={style.content}
+              onClick={() => setShowModal(true)}
+            >
               <FontAwesomeIcon icon={faSliders} />
               FILTER
             </button>
@@ -95,7 +103,7 @@ function ProductOrder() {
               {o.status == 'cancelled' && (
                 <div className={style.fom}>
                   <div className={style.boxs}>
-                    <p>X</p>
+                    <FontAwesomeIcon icon={faX} />
                   </div>
                   <div className={style.job}>
                     <b>Cancle</b>
@@ -142,6 +150,7 @@ function ProductOrder() {
           </div>
         ))}
       </div>
+      {showModal && <Modal closeModal={closeModal}></Modal>}
     </div>
   );
 }

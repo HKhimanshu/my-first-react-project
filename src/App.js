@@ -13,6 +13,8 @@ import OrderItems from './order/orderitems-details';
 import TimelineItem from './timeline/timelineitem';
 import WriteReview from './order/write-review';
 import Uploader from './order/uploder';
+import MyModal from './modal/my-modal';
+import Filter from './order/filter/filter';
 
 function App() {
   return (
@@ -20,8 +22,12 @@ function App() {
       {/* <ImagesViewer></ImagesViewer> */}
       {/* <Productdescription></Productdescription> */}
       {/* <ProductOrder></ProductOrder> */}
-      <WriteReview></WriteReview>
+      <Filter></Filter>
+
+      {/* <MyModal></MyModal> */}
+      {/* <WriteReview></WriteReview> */}
       {/* <Uploader></Uploader> */}
+
       {/* <OrderItems></OrderItems> */}
       {/* <TimelineItem></TimelineItem> */}
       {/* <OrderDetails></OrderDetails> */}

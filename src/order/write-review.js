@@ -3,12 +3,17 @@ import styles from './write-review.module.css';
 import { faStar, faX } from '@fortawesome/free-solid-svg-icons';
 import { faImage } from '@fortawesome/free-regular-svg-icons';
 import Uploader from './uploder';
-function WriteReview() {
+function WriteReview({ closeModal, ratting }) {
+  const stars = [1, 2, 3, 4, 5];
   return (
     <div className={styles.maincontainer}>
       <div className={styles.fox}>
         <p className={styles.write}>WRITE REVIEW</p>
-        <FontAwesomeIcon icon={faX} className={styles.cont} />
+        <FontAwesomeIcon
+          icon={faX}
+          className={styles.cont}
+          onClick={closeModal}
+        />
       </div>
       <div className={styles.content}>
         <img
@@ -20,11 +25,14 @@ function WriteReview() {
             ESSENTIA EXTRACTS Cold-Pressed White Sesame Oil - 250ml
           </p>
           <p className={styles.right}>
-            <FontAwesomeIcon icon={faStar} className={styles.star} />
-            <FontAwesomeIcon icon={faStar} className={styles.graystar} />
-            <FontAwesomeIcon icon={faStar} className={styles.graystar} />
-            <FontAwesomeIcon icon={faStar} className={styles.graystar} />
-            <FontAwesomeIcon icon={faStar} className={styles.graystar} />
+            {stars.map((i) => {
+              return (
+                <FontAwesomeIcon
+                  icon={faStar}
+                  className={i <= ratting ? styles.star : styles.graystar}
+                />
+              );
+            })}
           </p>
         </div>
       </div>
@@ -35,6 +43,15 @@ function WriteReview() {
         ></textarea>
       </div>
       <Uploader></Uploader>
+      <p className={styles.byyy}>
+        By submitting review you give us consent to publish and process personal
+        information in accordance with
+        <span className={styles.terms}>Terms of use </span>and
+        <span className={styles.terms}> Privacy Policy</span>
+      </p>
+      <div className={styles.lastbtn}>
+        <button className={styles.submit}>SUBMIT</button>
+      </div>
     </div>
   );
 }

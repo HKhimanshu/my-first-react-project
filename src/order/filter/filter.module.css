@@ -1,0 +1,23 @@
+.maindiv {
+  background-color: #fff;
+}
+.filterorder {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  color: #282c3f;
+}
+.status {
+  font-size: 14px;
+  line-height: 16px;
+  color: #282c3f;
+}
+.radio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  border-radius: 50%;
+  height: 16px;
+  opacity: 0;
+}
