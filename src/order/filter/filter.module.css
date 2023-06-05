@@ -13,11 +13,4 @@
   color: #282c3f;
 }
 .radio {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 16px;
-  border-radius: 50%;
-  height: 16px;
-  opacity: 0;
 }

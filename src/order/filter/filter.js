@@ -5,7 +5,7 @@ function Filter() {
     <div className={styles.maindiv}>
       <p className={styles.filterorder}>Filter Orders</p>
       <h4 className={styles.status}>status</h4>
-      <input type='Radio' className={styles.radio}></input>
+      <input type='radio' className={styles.radio}></input>
     </div>
   );
 }
