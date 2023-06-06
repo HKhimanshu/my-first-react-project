@@ -1,16 +1,75 @@
 .maindiv {
+  width: 500px;
+  border-radius: 5px;
   background-color: #fff;
 }
 .filterorder {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 35px;
   color: #282c3f;
 }
 .status {
   font-size: 14px;
-  line-height: 16px;
+  margin-top: 35px;
   color: #282c3f;
 }
 .radio {
+  width: 16px;
+}
+
+.all {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #282c3f;
+  margin: 8px;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  margin-top: 10px;
+}
+.continer {
+  padding-top: 15px;
+  padding-left: 15px;
+  top: 0;
+  display: flex;
+  background-color: #fff;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cutbtn {
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 15px;
+}
+.secondary {
+  padding-left: 15px;
+}
+.boder {
+  border: 1px solid gainsboro;
+
+  margin: 8px 0;
+}
+.time {
+  font-size: 14px;
+  margin-top: 25px;
+  color: #282c3f;
+}
+.timeradio {
+  width: 16px;
+}
+.wide {
+  width: 250px;
+  margin: 20px 14px 25px 18px;
+}
+.wishlist-btn {
+  width: 200px;
+  margin-left: 15px;
+}
+.cont {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
 }
