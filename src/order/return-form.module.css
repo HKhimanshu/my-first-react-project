@@ -1,25 +1,149 @@
 .order {
   background-color: #fff;
-  padding: 20px;
+  padding-top: 1px;
 }
 .maindiv {
   background-color: #f5f5f5;
-  padding: 20px;
+  padding: 12px;
   width: 700px;
 }
 
-.line {
-  color: #f2f4f4;
-  margin: 15px 0;
-}
 .eligible {
+  margin-left: 9px;
+  font-size: 13px;
+  font-weight: 300;
 }
 .undo {
-  border: 1px solid rgb(3, 166, 133);
-  color: rgb(3, 166, 133);
-  border-radius: 50%;
   padding: 4px;
 }
 .till {
   display: flex;
+  align-items: center;
+}
+.retu {
+  align-items: center;
+  display: flex;
+  margin-left: 12px;
+}
+.content {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 20px;
+}
+.view {
+  margin-top: 1.2px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ff3f6c;
+  font-weight: 600;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 15px;
+}
+.ordern2 {
+  background-color: #fff;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+.himanshu {
+  padding: 16px;
+}
+.did {
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #282c3f;
+}
+.gm {
+  color: #696e79;
+  font-size: 14px;
+  line-height: 20px;
+}
+.csk {
+  margin: 12px 0;
+  border-top: 1px solid #eaeaec;
+  padding-top: 10px;
+}
+.select {
+  text-transform: uppercase;
+  color: #a9abb3;
+  font-size: 12px;
+}
+.star {
+  font-size: 5px;
+  position: absolute;
+  top: 1px;
+  margin-left: 4px;
+  color: tomato;
+}
+.reason {
+  position: relative;
+  margin-bottom: 35px;
+}
+.product {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+.was {
+  text-align: left;
+  font-size: 14px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #282c3f;
+}
+.sourabh {
+  width: 15px;
+  cursor: pointer;
+  height: 15px;
+}
+.text {
+  min-height: 70px;
+  padding: 13px 12px;
+  width: 100%;
+  border: 1px solid #d4d5d9;
+  border-radius: 4px;
+  outline: none;
+}
+.ord {
+  background-color: #fff;
+  padding-top: 1px;
+  margin-top: 10px;
+}
+.that {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #282c3f;
+  text-align: left;
+  margin-left: 10px;
+}
+.confirm {
+  display: flex;
+  align-items: center;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pod {
+  color: rgb(147, 149, 158);
+  font-weight: 700;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.price {
+  font-size: 18px;
+  line-height: 26px;
+  color: #282c3f;
+  font-weight: 700;
+}
+.wide {
+  width: 300px;
+}
+.check {
+  cursor: pointer;
 }
