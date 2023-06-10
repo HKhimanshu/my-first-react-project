@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { faFile, faImage } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faX } from '@fortawesome/free-solid-svg-icons';
-function Uploader() {
+function Uploader({ max }) {
   const [images, setImages] = useState([]);
   const [fileName, setFileName] = useState('No selected file');
   const inputRef = useRef();
@@ -24,13 +24,13 @@ function Uploader() {
           onChange={({ target: { files } }) => {
             files[0] && setFileName(files[0].name);
             if (files) {
-              if (images.length < 5) {
+              if (images.length < max) {
                 setImages((i) => {
                   i.push(URL.createObjectURL(files[0]));
                   return [...i];
                 });
               } else {
-                alert('You can add upto 5 images');
+                alert('You can add upto ' + max + ' images');
               }
             }
           }}

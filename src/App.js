@@ -16,6 +16,9 @@ import Uploader from './order/uploder';
 import MyModal from './modal/my-modal';
 import Filter from './order/filter/filter';
 import ReturnForm from './order/return-form';
+import ImageVerification from './order/himanshu';
+import PhotoVeraction from './order/photovercation';
+import Cupons from './order/cupons/cupons';
 
 function App() {
   return (
@@ -24,16 +27,18 @@ function App() {
       {/* <Productdescription></Productdescription> */}
       {/* <ProductOrder></ProductOrder> */}
       {/* <Filter></Filter> */}
-      <ReturnForm></ReturnForm>
+      {/* <ReturnForm></ReturnForm> */}
       {/* <MyModal></MyModal> */}
       {/* <WriteReview></WriteReview> */}
       {/* <Uploader></Uploader> */}
-
+      <Cupons></Cupons>
       {/* <OrderItems></OrderItems> */}
       {/* <TimelineItem></TimelineItem> */}
       {/* <OrderDetails></OrderDetails> */}
       {/* <Imagesliderexample></Imagesliderexample> */}
       {/* <SearchInput></SearchInput> */}
+      {/* <PhotoVeraction></PhotoVeraction> */}
+      {/* <ImageVerification></ImageVerification> */}
     </>
   );
 }

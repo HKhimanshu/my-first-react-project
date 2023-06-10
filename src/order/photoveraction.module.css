@@ -1,0 +1,101 @@
+.maindiv {
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  width: 480px;
+  overflow: hidden;
+  margin: 75px auto;
+  padding: 12px;
+}
+.photo {
+  font-weight: 600;
+  font-size: 16px;
+}
+.seconddiv {
+  background-color: #fff;
+  padding: 16px;
+}
+.flas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cutbtn {
+  cursor: pointer;
+  right: 16px;
+  font-size: 14px;
+}
+.speed {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #696e79;
+  margin: 0;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.fox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.move {
+  padding: 16px;
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+.complete {
+  font-size: 14px;
+  font-weight: 600;
+}
+.star {
+  color: tomato;
+}
+.rrr {
+  color: #696e79;
+  margin: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.hhh {
+  width: 100%;
+  border: 1px solid #d4d5d9;
+  border-radius: 2px;
+  min-height: 100px;
+  outline: none;
+  padding: 14px;
+  margin-top: 15px;
+}
+
+.word {
+  padding-left: 12px;
+}
+
+.wide {
+  cursor: pointer;
+}
+.line {
+  color: #f2f2f2;
+  margin-top: 15px;
+}
+.loader {
+  margin-top: 20px;
+}
+.endbtn {
+  background-color: #fff;
+  padding: 16px;
+  margin-top: 20px;
+}
+.wide {
+  width: 100%;
+}
+.arro {
+  margin-left: 15px;
+}
