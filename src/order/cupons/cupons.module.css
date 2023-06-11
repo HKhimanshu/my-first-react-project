@@ -1,8 +1,10 @@
 .herodiv {
   border: 1px solid gainsboro;
   padding: 0 10px;
+  box-shadow: 0 0 4px rgba(40, 44, 63, 0.08);
   width: 725px;
   margin: 0 auto;
+  margin-top: 12px;
 }
 
 .maindiv {
@@ -66,4 +68,12 @@
   cursor: pointer;
   font-weight: 800;
   color: #526cd0;
+}
+.hide {
+  margin-left: 17px;
+  padding-bottom: 20px;
+}
+.hello {
+  color: #282c3f;
+  font-size: 14px;
 }

@@ -1,5 +1,10 @@
+@font-face {
+  font-family: Assistant;
+  src: url(./font/Assistant-VariableFont_wght.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Assistant;
 }
