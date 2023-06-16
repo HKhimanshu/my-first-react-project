@@ -19,6 +19,7 @@ import ReturnForm from './order/return-form';
 import ImageVerification from './order/himanshu';
 import PhotoVeraction from './order/photovercation';
 import Cupons from './order/cupons/cupons';
+import Header from './meanu/header';
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <MyModal></MyModal> */}
       {/* <WriteReview></WriteReview> */}
       {/* <Uploader></Uploader> */}
-      <Cupons></Cupons>
+      {/* <Cupons></Cupons> */}
+      <Header></Header>
       {/* <OrderItems></OrderItems> */}
       {/* <TimelineItem></TimelineItem> */}
       {/* <OrderDetails></OrderDetails> */}
