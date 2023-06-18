@@ -1,7 +1,7 @@
 .maincontener {
   background-color: #fff;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  padding: 20px 7px 0;
+  padding: 10px 7px 0;
 }
 .logo {
   height: 40px;
@@ -10,7 +10,7 @@
 }
 .word {
   list-style-type: none;
-  margin: 13px 17px 2px;
+  margin: 13px 6px 2px;
   font-size: 14px;
   letter-spacing: 0.3px;
   color: #282c3f;
@@ -42,7 +42,7 @@
   display: inline-block;
   font-size: 14px;
   height: 20px;
-  line-height: 24px;
+
   width: 334px;
   color: #696e79;
   box-sizing: content-box;
@@ -52,6 +52,7 @@
   border: 1px solid #f5f5f6;
   border-radius: 0 4px 4px 0;
   border-left: 0;
+  margin-top: 6px;
   background: #f5f5f6;
 }
 .search {
@@ -70,15 +71,46 @@
   border-right: none;
   border-radius: 4px 0 0 4px;
   position: absolute;
+  margin-top: 6px;
 }
 .glass {
   font-size: 15px;
   color: #696e79;
 }
-.word:hover {
-  border-bottom: 2px solid #ff3f6c;
-}
-.fix {
+
+.himanshu .word div {
   height: 50px;
   padding: 0 11px;
+  cursor: pointer;
+}
+
+.men:hover {
+  border-bottom: 3px solid #ee5f73;
+  cursor: pointer;
+}
+.women:hover {
+  border-bottom: 3px solid #fb56c1;
+}
+.kids:hover {
+  border-bottom: 3px solid #f26a10;
+}
+.living:hover {
+  border-bottom: 3px solid #f2c210;
+}
+.beauty:hover {
+  border-bottom: 3px solid #0db7af;
+}
+.user {
+  margin-top: 6px;
+  margin-left: 45px;
+}
+.icc {
+  margin-left: 8px;
+  color: #4d4d4d;
+}
+.pro {
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 1px;
 }

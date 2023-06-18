@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './header.module.css';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
 function Header() {
   return (
     <div className={style.maincontener}>
@@ -13,14 +14,30 @@ function Header() {
         </div>
         <ul className={style.himanshu}>
           <li className={style.word}>
-            <div className={style.fix}>
+            <div className={style.men}>
               <p>MEN</p>
             </div>
           </li>
-          <li className={style.word}>WOMEN</li>
-          <li className={style.word}>KIDS</li>
-          <li className={style.word}>HOME & LIVING</li>
-          <li className={style.word}>BEAUTY</li>
+          <li className={style.word}>
+            <div className={style.women}>
+              <p>WOMEN</p>
+            </div>
+          </li>
+          <li className={style.word}>
+            <div className={style.kids}>
+              <p>KIDS</p>
+            </div>
+          </li>
+          <li className={style.word}>
+            <div className={style.living}>
+              <p>HOME&LIVING</p>
+            </div>
+          </li>
+          <li className={style.word}>
+            <div className={style.beauty}>
+              <p>BEAUTY</p>
+            </div>
+          </li>
         </ul>
         <div className={style.search}>
           <div className={style.for}>
@@ -32,6 +49,10 @@ function Header() {
               className={style.place}
             ></input>
           </div>
+        </div>
+        <div className={style.user}>
+          <FontAwesomeIcon icon={faUser} className={style.icc} />
+          <p className={style.pro}>profile</p>
         </div>
       </div>
     </div>

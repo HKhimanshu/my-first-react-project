@@ -20,11 +20,12 @@ import ImageVerification from './order/himanshu';
 import PhotoVeraction from './order/photovercation';
 import Cupons from './order/cupons/cupons';
 import Header from './meanu/header';
+import CategoryCard from './card/category-card';
+import Everystep from './website/project';
 
 function App() {
   return (
     <>
-      {/* <ImagesViewer></ImagesViewer> */}
       {/* <Productdescription></Productdescription> */}
       {/* <ProductOrder></ProductOrder> */}
       {/* <Filter></Filter> */}
@@ -40,6 +41,7 @@ function App() {
       {/* <Imagesliderexample></Imagesliderexample> */}
       {/* <SearchInput></SearchInput> */}
       {/* <PhotoVeraction></PhotoVeraction> */}
+      {/* <Everystep /> */}
       {/* <ImageVerification></ImageVerification> */}
     </>
   );

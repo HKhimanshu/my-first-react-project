@@ -1,9 +1,9 @@
-import "./category.css";
+import style from './category.module.css';
 function CategoryCard({ image, title }) {
   return (
-    <div className="heading">
-      <img src={image}></img>
-      <p className="center">{title}</p>
+    <div className={style.heading}>
+      <img src={image} className={style.image}></img>
+      <p className={style.center}>{title}</p>
     </div>
   );
 }
