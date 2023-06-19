@@ -1,0 +1,81 @@
+.seconddiv {
+  visibility: visible;
+  opacity: 1;
+  left: 50%;
+  margin-left: -570px;
+  height: 440px;
+  width: 1135px;
+  z-index: 1;
+  text-align: left;
+  position: absolute;
+  top: 64px;
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
+}
+.men {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0 10px 10px 15px;
+  transition: all 0.2s ease-out;
+}
+.lol {
+  float: left;
+  display: block;
+  position: relative;
+  height: 436px;
+  padding-top: 4px;
+}
+.form {
+  display: block;
+  position: relative;
+  float: left;
+  width: 216px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hrr {
+  padding-left: 25px;
+  color: #282c3f;
+  line-height: 23px !important;
+  font-weight: 400;
+  display: block;
+  font-size: 14px;
+}
+.hrr:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+.cname {
+  color: #ee5f73;
+  display: block;
+  font-size: 14px;
+  padding: 12px 0 2px;
+  cursor: pointer;
+  overflow: hidden;
+  line-height: 25px;
+  font-weight: 700;
+  padding-left: 25px;
+}
+.line {
+  border-bottom: 1 px solid;
+  width: 140px;
+  height: 1px;
+  margin: 12px 0 0 25px;
+  background-color: #eaeaec;
+}
+.lols {
+  float: left;
+  display: block;
+  position: relative;
+  height: 436px;
+  padding-top: 4px;
+  background-color: rgba(245, 245, 246, 0.4);
+}

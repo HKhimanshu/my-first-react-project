@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faHeart, faUser } from '@fortawesome/free-regular-svg-icons';
 import ProfleMenu from '../welcome/welcome';
+import MenTshirt from '../menhover/mentishirt';
 function Header() {
   return (
     <div className={style.maincontener}>
@@ -21,6 +22,9 @@ function Header() {
           <li className={style.word}>
             <div className={style.men}>
               <p>MEN</p>
+              <div>
+                <MenTshirt />
+              </div>
             </div>
           </li>
           <li className={style.word}>
