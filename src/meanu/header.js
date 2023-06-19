@@ -1,7 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './header.module.css';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
+import {
+  faBagShopping,
+  faBriefcase,
+  faMagnifyingGlass,
+} from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faUser } from '@fortawesome/free-regular-svg-icons';
+import ProfleMenu from '../welcome/welcome';
 function Header() {
   return (
     <div className={style.maincontener}>
@@ -51,8 +56,21 @@ function Header() {
           </div>
         </div>
         <div className={style.user}>
-          <FontAwesomeIcon icon={faUser} className={style.icc} />
-          <p className={style.pro}>profile</p>
+          <div className={style.profile}>
+            <FontAwesomeIcon icon={faUser} className={style.icc} />
+            <p className={style.pro}>Profile</p>
+            <div className={style.profile_menu}>
+              <ProfleMenu />
+            </div>
+          </div>
+          <div className={style.wish}>
+            <FontAwesomeIcon icon={faHeart} className={style.icc} />
+            <p className={style.pro}>Wishlist</p>
+          </div>
+          <div className={style.wish}>
+            <FontAwesomeIcon icon={faBagShopping} className={style.icc} />
+            <p className={style.pro}> Bag</p>
+          </div>
         </div>
       </div>
     </div>

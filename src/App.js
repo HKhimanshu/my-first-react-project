@@ -22,6 +22,7 @@ import Cupons from './order/cupons/cupons';
 import Header from './meanu/header';
 import CategoryCard from './card/category-card';
 import Everystep from './website/project';
+import ProfleMenu from './welcome/welcome';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       {/* <SearchInput></SearchInput> */}
       {/* <PhotoVeraction></PhotoVeraction> */}
       {/* <Everystep /> */}
+      {/* <ProfleMenu></ProfleMenu> */}
       {/* <ImageVerification></ImageVerification> */}
     </>
   );
