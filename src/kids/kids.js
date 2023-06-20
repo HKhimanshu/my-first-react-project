@@ -1,47 +1,45 @@
 import React from 'react';
-import himanshu from './mentishirt.module.css';
-export default function MenTshirt() {
+import himanshu from './kids.module.css';
+export default function KIdsList() {
   return (
     <div className={himanshu.seconddiv}>
       <div className={himanshu.men}>
         <li className={himanshu.lol}>
           <ul className={himanshu.form}>
-            <li className={himanshu.cname}>Topwear</li>
+            <li className={himanshu.cname}>Boys Clothing</li>
             <li className={himanshu.hrr}>T-Shirts</li>
-            <li className={himanshu.hrr}>Casual Shirts</li>
-            <li className={himanshu.hrr}>Formal Shirts</li>
-            <li className={himanshu.hrr}>Sweatshirts</li>
-            <li className={himanshu.hrr}>Sweaters</li>
-            <li className={himanshu.hrr}>Jackets</li>
-            <li className={himanshu.hrr}>Blazers & Coats</li>
-            <li className={himanshu.hrr}>Suits</li>
-            <li className={himanshu.hrr}>Rain Jacket</li>
-            <div className={himanshu.line}></div>
-            <li className={himanshu.cname}>Indian & Festive wear</li>
-            <li className={himanshu.hrr}>Kurtas & Kurta Sets</li>
-            <li className={himanshu.hrr}>Sherwanis</li>
-            <li className={himanshu.hrr}>Nehru Jackets</li>
-            <li className={himanshu.hrr}>Dhotis</li>
+            <li className={himanshu.hrr}> Shirts</li>
+            <li className={himanshu.hrr}>Shorts</li>
+            <li className={himanshu.hrr}>Jeans</li>
+            <li className={himanshu.hrr}>Trouser</li>
+            <li className={himanshu.hrr}> Ethinc Wear</li>
+            <li className={himanshu.hrr}>Jacket,Sweaters & Sweatshirts</li>
+            <li className={himanshu.hrr}>Track pants & Pyjamas</li>
+            <li className={himanshu.hrr}>Party Wear</li>
+            <li className={himanshu.hrr}>Innerwear & Thermals</li>
+            <li className={himanshu.hrr}>Nightwear & Thermals</li>
+            <li className={himanshu.hrr}> Value Packs</li>
           </ul>
         </li>
         {/* 2ns */}
         <li className={himanshu.lols}>
           <ul className={himanshu.form}>
-            <li className={himanshu.cname}>Bottomwear</li>
-            <li className={himanshu.hrr}>Jeans</li>
-            <li className={himanshu.hrr}>Casual Trouser</li>
-            <li className={himanshu.hrr}>Formal Trouser</li>
-            <li className={himanshu.hrr}>Shorts</li>
-            <li className={himanshu.hrr}>Track Pants & Joggers</li>
-            <div className={himanshu.line}></div>
-            <li className={himanshu.cname}>Innerwear & Sleepwear</li>
-            <li className={himanshu.hrr}>Briefs & Trunks</li>
-            <li className={himanshu.hrr}>Boxers</li>
-            <li className={himanshu.hrr}>Vests</li>
-            <li className={himanshu.hrr}>Sleepwear&Loungewer</li>
-            <li className={himanshu.hrr}>Thermals</li>
-            <div className={himanshu.line}></div>
-            <li className={himanshu.cname}>Plus Size</li>
+            <li className={himanshu.cname}>Girls Clothing</li>
+            <li className={himanshu.hrr}>Dresses</li>
+            <li className={himanshu.hrr}>Tops</li>
+            <li className={himanshu.hrr}>Tshirts</li>
+            <li className={himanshu.hrr}>Clothing Sets</li>
+            <li className={himanshu.hrr}>Lehenga choli</li>
+            <li className={himanshu.hrr}>Kurta Sets</li>
+            <li className={himanshu.hrr}>Party Wear</li>
+            <li className={himanshu.hrr}>Dungarees & Jumpsuits</li>
+            <li className={himanshu.hrr}>Skirts & shorts</li>
+            <li className={himanshu.hrr}>Tights & Leggings</li>
+            <li className={himanshu.hrr}>Jeans, Trouser & Capris</li>
+            <li className={himanshu.hrr}>Jacket,Sweaters & Sweatshirts</li>
+            <li className={himanshu.hrr}>Innerwear & Thermals</li>
+            <li className={himanshu.hrr}>Nightwear & Loungewer</li>
+            <li className={himanshu.hrr}>Value Packs</li>
           </ul>
         </li>
         {/* 3rd */}
@@ -49,16 +47,19 @@ export default function MenTshirt() {
           <ul className={himanshu.form}>
             <li className={himanshu.cname}>Footwear</li>
             <li className={himanshu.hrr}>Casual Shoes</li>
+            <li className={himanshu.hrr}>Flipflops</li>
             <li className={himanshu.hrr}>Sports Shoes</li>
-            <li className={himanshu.hrr}>Formal Shoes</li>
-            <li className={himanshu.hrr}>Sneakers</li>
-            <li className={himanshu.hrr}>Sandals & Floaters</li>
-            <li className={himanshu.hrr}>Flip Flopas</li>
+            <li className={himanshu.hrr}>Flats</li>
+            <li className={himanshu.hrr}>Sandals</li>
+            <li className={himanshu.hrr}>Heels</li>
+            <li className={himanshu.hrr}>School Shoes</li>
             <li className={himanshu.hrr}>Socks</li>
             <div className={himanshu.line}></div>
-            <li className={himanshu.cname}>Personal Care & Grooming</li>
-            <li className={himanshu.cname}>Sunglasses & Frames</li>
-            <li className={himanshu.cname}>Watches</li>
+            <li className={himanshu.cname}>Toys</li>
+            <li className={himanshu.hrr}>Learning & Development</li>
+            <li className={himanshu.hrr}>Activity</li>
+            <li className={himanshu.hrr}>Soft Toys</li>
+            <li className={himanshu.hrr}>Action Figure / Play set</li>
           </ul>
         </li>
         {/* 4th */}

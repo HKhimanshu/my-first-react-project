@@ -1,7 +1,7 @@
 .maincontener {
   background-color: #fff;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  padding: 10px 7px 18px;
+  padding: 10px 7px 0;
 }
 .logo {
   height: 40px;
@@ -11,7 +11,7 @@
 }
 .word {
   list-style-type: none;
-  margin: 13px 6px 2px;
+  margin: 13px 6px 1px;
   font-size: 14px;
   letter-spacing: 0.3px;
   color: #282c3f;
@@ -77,27 +77,14 @@
   color: #696e79;
 }
 
-.himanshu .word div {
-  /* height: 50px; */
+.men {
+  height: 50px;
   padding: 0 11px;
   cursor: pointer;
 }
-
 .men:hover {
   border-bottom: 4px solid #ee5f73;
   cursor: pointer;
-}
-.women:hover {
-  border-bottom: 4px solid #fb56c1;
-}
-.kids:hover {
-  border-bottom: 4px solid #f26a10;
-}
-.living:hover {
-  border-bottom: 4px solid #f2c210;
-}
-.beauty:hover {
-  border-bottom: 4px solid #0db7af;
 }
 .user {
   margin-top: 6px;
@@ -123,6 +110,7 @@
 .profile {
   text-align: center;
   padding: 0 11px;
+  height: 61px;
   position: relative;
 }
 .profile:hover {
@@ -133,9 +121,30 @@
   display: none;
   position: absolute;
   left: -100px;
-  top: 60px;
+  top: 61px;
   text-align: left;
 }
 .profile:hover .profile_menu {
+  display: block;
+}
+.hedd {
+  position: absolute;
+  top: 98%;
+  display: none;
+  left: -10px;
+}
+.men:hover .hedd {
+  display: block;
+}
+.women:hover .hedd {
+  display: block;
+}
+.kids:hover .hedd {
+  display: block;
+}
+.living:hover .hedd {
+  display: block;
+}
+.beauty:hover .hedd {
   display: block;
 }

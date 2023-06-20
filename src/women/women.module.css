@@ -1,29 +1,11 @@
 .seconddiv {
-  visibility: visible;
-  opacity: 1;
-  left: 50%;
-  margin-left: -570px;
-  height: 440px;
-  width: 1135px;
-  z-index: 1;
-  text-align: left;
-  position: absolute;
-  top: 64px;
   background-color: #fff;
-  transition: all 0.3s ease-out;
-  -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
-  pointer-events: auto;
 }
 .men {
-  visibility: visible;
-  opacity: 1;
-  left: 0;
-  right: 0;
-  position: absolute;
   margin: 0 auto;
   padding: 0 10px 10px 15px;
-  transition: all 0.2s ease-out;
+  display: flex;
 }
 .lol {
   float: left;
@@ -54,13 +36,10 @@
   cursor: pointer;
 }
 .cname {
-  color: #ee5f73;
-  display: block;
+  color: #fb56c1;
   font-size: 14px;
-  padding: 12px 0 2px;
+  padding: 12px 0;
   cursor: pointer;
-  overflow: hidden;
-  line-height: 25px;
   font-weight: 700;
   padding-left: 25px;
 }

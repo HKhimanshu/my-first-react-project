@@ -23,7 +23,7 @@ import Header from './meanu/header';
 import CategoryCard from './card/category-card';
 import Everystep from './website/project';
 import ProfleMenu from './welcome/welcome';
-import MenTshirt from './menhover/mentishirt';
+import MenTshirt from './menhover/SumMenu';
 
 function App() {
   return (
