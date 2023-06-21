@@ -1,0 +1,6 @@
+.hello {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e1d3d3;
+}

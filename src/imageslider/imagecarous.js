@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
-import Mycard from "./Mycard.js";
-import "./image-slider-example.js";
-import styles from "./imagecarous.module.css";
+import React, { useEffect, useRef, useState } from 'react';
+import Mycard from './Mycard.js';
+import './image-slider-example.js';
+import styles from './imagecarous.module.css';
 const Imagecarous = ({ type, data }) => {
   let [activeCard, setActiveCard] = useState(0);
   let [timer, setTimer] = useState(0);
@@ -20,7 +20,7 @@ const Imagecarous = ({ type, data }) => {
             btnpressdot(activeCard + 1);
           }
         },
-        type === "card" ? 2000 : 3000
+        type === 'card' ? 2000 : 3000
       )
     );
     return () => setTimer(null);
@@ -44,8 +44,8 @@ const Imagecarous = ({ type, data }) => {
 
   return (
     <div>
-      <div className={styles["product-carouse"]}>
-        <div className={styles["product-container"]} ref={productContainer}>
+      <div className={styles['product-carouse']}>
+        <div className={styles['product-container']} ref={productContainer}>
           {data.map((i) => (
             <Mycard
               image={i.image}
@@ -57,12 +57,12 @@ const Imagecarous = ({ type, data }) => {
           ))}
         </div>
       </div>
-      <div className={styles["dots"]}>
+      <div className={styles['dots']}>
         {data.map((i, index) => (
           <div
-            className={`${styles["dot"]} ${
-              index == activeCard ? styles["active"] : ""
-            } ${type === "card" ? styles["small"] : ""}`}
+            className={`${styles['dot']} ${
+              index == activeCard ? styles['active'] : ''
+            } ${type === 'card' ? styles['small'] : ''}`}
             onClick={() => btnpressdot(index)}
           ></div>
         ))}

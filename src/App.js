@@ -21,14 +21,14 @@ import PhotoVeraction from './order/photovercation';
 import Cupons from './order/cupons/cupons';
 import Header from './meanu/header';
 import CategoryCard from './card/category-card';
-import Everystep from './website/project';
 import ProfleMenu from './welcome/welcome';
 import MenTshirt from './menhover/SumMenu';
+import Everystep from './website/category-card-grid';
 
 function App() {
   return (
     <>
-      {/* <Productdescription></Productdescription> */}
+      <Productdescription></Productdescription>
       {/* <ProductOrder></ProductOrder> */}
       {/* <Filter></Filter> */}
       {/* <ReturnForm></ReturnForm> */}
@@ -36,12 +36,13 @@ function App() {
       {/* <WriteReview></WriteReview> */}
       {/* <Uploader></Uploader> */}
       {/* <Cupons></Cupons> */}
-      <Header></Header>
+      {/* <Header></Header> */}
       {/* <MenTshirt /> */}
       {/* <OrderItems></OrderItems> */}
       {/* <TimelineItem></TimelineItem> */}
       {/* <OrderDetails></OrderDetails> */}
       {/* <Imagesliderexample></Imagesliderexample> */}
+      {/* <CategoryCard></CategoryCard> */}
       {/* <SearchInput></SearchInput> */}
       {/* <PhotoVeraction></PhotoVeraction> */}
       {/* <Everystep /> */}

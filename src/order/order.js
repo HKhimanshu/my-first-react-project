@@ -12,7 +12,6 @@ import SearchInput from '../Search/search-input';
 import OrderRatting from './order-ratting';
 import Modal from '../modal/modal';
 import { useState } from 'react';
-import Filter from './filter/filter';
 import OrderFilter from './filter/filter';
 function ProductOrder() {
   const [showModal, setShowModal] = useState(false);
